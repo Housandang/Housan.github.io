@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>My Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>食べられません</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>こんにちは</h1>
-    <p>個人サイト作成テストです。</p>
+
+<div class="page">
+
+  <!-- 左側：キャラクターが立つステージ -->
+  <section class="stage">
+
+    <p class="watermark" aria-hidden="true">
+      <span class="watermark__word watermark__word--do">DO</span>
+      <span class="watermark__word watermark__word--not">NOT</span>
+      <span class="watermark__word watermark__word--eat">EAT</span>
+    </p>
+
+    <div class="stage__aura" aria-hidden="true"></div>
+
+    <img class="stage__character" id="character" src="" alt="今日のキャラクター立ち絵">
+
+    <p class="copyright">©2026 ホウ酸</p>
+
+  </section>
+
+  <!-- 右側：サイトタイトルとナビゲーション -->
+  <div class="content">
+
+    <header class="site-header">
+      <h1 class="site-title">食<span>べ</span>られません</h1>
+    </header>
+
+    <nav class="site-nav" aria-label="サイト内ナビゲーション">
+      <ul>
+        <li class="has-dot"><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="other.html">Other</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
